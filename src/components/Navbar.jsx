@@ -1,15 +1,23 @@
 import React from "react";
 
 function Navbar() {
+  const navbarStyle = {
+    backgroundColor: "pink", // navbar background
+    color: "white",
+    padding: "1rem 2rem",
+    textAlign: "center",
+    fontFamily: "'Roboto', sans-serif",
+    fontWeight: 700
+  };
+
+  const titleStyle = {
+    margin: 0,
+    fontSize: "2rem"
+  };
+
   return (
-    <nav style={{ 
-      padding: "15px", 
-      background: "linear-gradient(to right, violet, pink)", 
-      color: "white", 
-      textAlign: "center",
-      borderBottom: "2px solid white"
-    }}>
-      <h2>Team 8 Project</h2>
+    <nav style={navbarStyle}>
+      <h2 style={titleStyle}>Citizen Interaction Portal</h2>
     </nav>
   );
 }
